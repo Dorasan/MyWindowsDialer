@@ -20,9 +20,9 @@
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>15.0</VCProjectVersion>
-    <ProjectGuid>{D5277FB2-577C-4ADD-BE53-3A286FB0271E}</ProjectGuid>
+    <ProjectGuid>{C5F490D0-6BAD-40FD-9864-D4EDC41FF4D6}</ProjectGuid>
     <Keyword>MFCProj</Keyword>
-    <RootNamespace>DorasPPPoEDialer</RootNamespace>
+    <RootNamespace>MyWindowsPPPoEDialer</RootNamespace>
     <WindowsTargetPlatformVersion>10.0.17134.0</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
@@ -31,7 +31,7 @@
     <UseDebugLibraries>true</UseDebugLibraries>
     <PlatformToolset>v141</PlatformToolset>
     <CharacterSet>Unicode</CharacterSet>
-    <UseOfMfc>Dynamic</UseOfMfc>
+    <UseOfMfc>Static</UseOfMfc>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
     <ConfigurationType>Application</ConfigurationType>
@@ -39,14 +39,14 @@
     <PlatformToolset>v141</PlatformToolset>
     <WholeProgramOptimization>true</WholeProgramOptimization>
     <CharacterSet>Unicode</CharacterSet>
-    <UseOfMfc>Dynamic</UseOfMfc>
+    <UseOfMfc>Static</UseOfMfc>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
     <ConfigurationType>Application</ConfigurationType>
     <UseDebugLibraries>true</UseDebugLibraries>
     <PlatformToolset>v141</PlatformToolset>
     <CharacterSet>Unicode</CharacterSet>
-    <UseOfMfc>Dynamic</UseOfMfc>
+    <UseOfMfc>Static</UseOfMfc>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
     <ConfigurationType>Application</ConfigurationType>
@@ -54,7 +54,7 @@
     <PlatformToolset>v141</PlatformToolset>
     <WholeProgramOptimization>true</WholeProgramOptimization>
     <CharacterSet>Unicode</CharacterSet>
-    <UseOfMfc>Dynamic</UseOfMfc>
+    <UseOfMfc>Static</UseOfMfc>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
   <ImportGroup Label="ExtensionSettings">
@@ -92,7 +92,7 @@
       <WarningLevel>Level3</WarningLevel>
       <Optimization>Disabled</Optimization>
       <SDLCheck>true</SDLCheck>
-      <PreprocessorDefinitions>WIN32;_WINDOWS;_DEBUG;%(PreprocessorDefinitions);_CRT_SECURE_NO_WARNINGS</PreprocessorDefinitions>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
     </ClCompile>
     <Link>
       <SubSystem>Windows</SubSystem>
@@ -138,7 +138,7 @@
       <FunctionLevelLinking>true</FunctionLevelLinking>
       <IntrinsicFunctions>true</IntrinsicFunctions>
       <SDLCheck>true</SDLCheck>
-      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;%(PreprocessorDefinitions);_CRT_SECURE_NO_WARNINGS</PreprocessorDefinitions>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
     </ClCompile>
     <Link>
       <SubSystem>Windows</SubSystem>
@@ -183,16 +183,16 @@
     </ResourceCompile>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClInclude Include="..\..\Dora%27s PPPoEDialer\Dora%27s PPPoEDialer\Dora%27s PPPoEDialer.h" />
-    <ClInclude Include="..\..\Dora%27s PPPoEDialer\Dora%27s PPPoEDialer\Dora%27s PPPoEDialerDlg.h" />
-    <ClInclude Include="..\..\Dora%27s PPPoEDialer\Dora%27s PPPoEDialer\Resource.h" />
-    <ClInclude Include="..\..\Dora%27s PPPoEDialer\Dora%27s PPPoEDialer\stdafx.h" />
-    <ClInclude Include="..\..\Dora%27s PPPoEDialer\Dora%27s PPPoEDialer\targetver.h" />
+    <ClInclude Include="MyWindowsPPPoEDialer.h" />
+    <ClInclude Include="MyWindowsPPPoEDialerDlg.h" />
+    <ClInclude Include="Resource.h" />
+    <ClInclude Include="stdafx.h" />
+    <ClInclude Include="targetver.h" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="..\..\Dora%27s PPPoEDialer\Dora%27s PPPoEDialer\Dora%27s PPPoEDialer.cpp" />
-    <ClCompile Include="..\..\Dora%27s PPPoEDialer\Dora%27s PPPoEDialer\Dora%27s PPPoEDialerDlg.cpp" />
-    <ClCompile Include="..\..\Dora%27s PPPoEDialer\Dora%27s PPPoEDialer\stdafx.cpp">
+    <ClCompile Include="MyWindowsPPPoEDialer.cpp" />
+    <ClCompile Include="MyWindowsPPPoEDialerDlg.cpp" />
+    <ClCompile Include="stdafx.cpp">
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Create</PrecompiledHeader>
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
@@ -200,13 +200,13 @@
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ResourceCompile Include="..\..\Dora%27s PPPoEDialer\Dora%27s PPPoEDialer\DorasPPPoEDialer.rc" />
+    <ResourceCompile Include="MyWindowsPPPoEDialer.rc" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="..\..\Dora%27s PPPoEDialer\Dora%27s PPPoEDialer\res\DorasPPPoEDialer.rc2" />
+    <None Include="res\MyWindowsPPPoEDialer.rc2" />
   </ItemGroup>
   <ItemGroup>
-    <Image Include="..\..\Dora%27s PPPoEDialer\Dora%27s PPPoEDialer\res\Dora%27s PPPoEDialer.ico" />
+    <Image Include="res\MyWindowsPPPoEDialer.ico" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

@@ -15,45 +15,45 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="..\..\Dora%27s PPPoEDialer\Dora%27s PPPoEDialer\Dora%27s PPPoEDialer.h">
+    <ClInclude Include="MyWindowsPPPoEDialer.h">
       <Filter>头文件</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\Dora%27s PPPoEDialer\Dora%27s PPPoEDialer\Dora%27s PPPoEDialerDlg.h">
+    <ClInclude Include="MyWindowsPPPoEDialerDlg.h">
       <Filter>头文件</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\Dora%27s PPPoEDialer\Dora%27s PPPoEDialer\stdafx.h">
+    <ClInclude Include="stdafx.h">
       <Filter>头文件</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\Dora%27s PPPoEDialer\Dora%27s PPPoEDialer\targetver.h">
+    <ClInclude Include="targetver.h">
       <Filter>头文件</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\Dora%27s PPPoEDialer\Dora%27s PPPoEDialer\Resource.h">
+    <ClInclude Include="Resource.h">
       <Filter>头文件</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="..\..\Dora%27s PPPoEDialer\Dora%27s PPPoEDialer\Dora%27s PPPoEDialer.cpp">
+    <ClCompile Include="MyWindowsPPPoEDialer.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\Dora%27s PPPoEDialer\Dora%27s PPPoEDialer\Dora%27s PPPoEDialerDlg.cpp">
+    <ClCompile Include="MyWindowsPPPoEDialerDlg.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\Dora%27s PPPoEDialer\Dora%27s PPPoEDialer\stdafx.cpp">
+    <ClCompile Include="stdafx.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ResourceCompile Include="..\..\Dora%27s PPPoEDialer\Dora%27s PPPoEDialer\DorasPPPoEDialer.rc">
+    <ResourceCompile Include="MyWindowsPPPoEDialer.rc">
       <Filter>资源文件</Filter>
     </ResourceCompile>
   </ItemGroup>
   <ItemGroup>
-    <None Include="..\..\Dora%27s PPPoEDialer\Dora%27s PPPoEDialer\res\DorasPPPoEDialer.rc2">
+    <None Include="res\MyWindowsPPPoEDialer.rc2">
       <Filter>资源文件</Filter>
     </None>
   </ItemGroup>
   <ItemGroup>
-    <Image Include="..\..\Dora%27s PPPoEDialer\Dora%27s PPPoEDialer\res\Dora%27s PPPoEDialer.ico">
+    <Image Include="res\MyWindowsPPPoEDialer.ico">
       <Filter>资源文件</Filter>
     </Image>
   </ItemGroup>
